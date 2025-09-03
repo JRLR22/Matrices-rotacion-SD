@@ -84,6 +84,8 @@ def actualizar(frame):
 
 ani = FuncAnimation(fig, actualizar, frames=201, interval=100, blit=False)
 
+#Para que funcione el guardado de la animacion se ocupa tener pillow instalado con este comando "pip install pillow"
+
 # Guardar la animación como GIF
 ani.save("rotacion.gif", writer="pillow", fps=10)
 
